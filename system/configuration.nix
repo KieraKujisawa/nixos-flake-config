@@ -116,6 +116,8 @@
     rclone
     putty
     nil
+    dotnetCorePackages.sdk_8_0-bin
+    dotnetCorePackages.sdk_9_0-bin
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
