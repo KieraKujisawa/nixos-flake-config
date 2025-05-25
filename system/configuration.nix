@@ -85,7 +85,10 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      kdePackages.kleopatra
+      kdePackages.yakuake
+      brave
+      thunderbird
     ];
   };
 
@@ -106,6 +109,8 @@
     gitFull
     git-cola
     rclone
+    putty
+    nil
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -120,6 +125,12 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  security.pam.services.login.gnupg = {
+    enable = true;
+    noAutostart = true;
+    storeOnly = true;
+  };
 
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [ 22 ];
