@@ -1,9 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-    another-input.url = "github:username/repo-name/branch-name";
   };
-  outputs = inputs@{ self, nixpkgs, another-input, ... }: {
+  outputs = inputs@{ self, nixpkgs, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
