@@ -92,6 +92,8 @@
       kdePackages.yakuake
       brave
       thunderbird
+      geany
+      vscode
     ];
   };
 
