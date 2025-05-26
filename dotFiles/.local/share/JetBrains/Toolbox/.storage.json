@@ -1,0 +1,20 @@
+{
+    "displayAvailableTools": true,
+    "firstRunDate": "2025-05-26T22:25:56.508603446Z",
+    "selectedMainPageTab": "Tools",
+    "acceptedLicenseAgreementHashes": [],
+    "lastStartedVersion": "2.6.1.40902",
+    "lastShownWhatsNewVersion": null,
+    "toolFreshness": {},
+    "dataloreConnected": false,
+    "skipUpdatePreviewFeedUntil": 1748384963816,
+    "addedServiceNameToAccountTokens": false,
+    "onboarding": {
+        "currentTechnicalStep": 0,
+        "version": 1,
+        "technicalOnboardingFinished": true
+    },
+    "expandedListSections": {},
+    "displayAvailableServices": true,
+    "preferredKeychain": "linux-fallback"
+}
