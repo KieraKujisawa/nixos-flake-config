@@ -90,16 +90,6 @@
     isNormalUser = true;
     description = "Kiera Meredith";
     extraGroups = [ "networkmanager" "docker" "libvirtd" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-      kdePackages.kleopatra
-      kdePackages.yakuake
-      brave
-      thunderbird
-      geany
-      vscode
-      putty
-    ];
   };
 
   # Install firefox.
