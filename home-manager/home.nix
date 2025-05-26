@@ -142,6 +142,14 @@
     };
   };
 
+  services.gpg-agent = {
+  enable = true;
+  extraConfig = # ini
+    ''
+      allow-preset-passphrase
+    '';
+  };
+
   # programs.bash = {
   #  enable = true;
   #  enableCompletion = true;

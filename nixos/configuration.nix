@@ -140,7 +140,6 @@
   programs.mtr.enable = true;
   programs.gnupg.agent = {
     enable = true;
-    enableSSHSupport = true;
   };
 
   # List services that you want to enable:
@@ -153,6 +152,14 @@
     noAutostart = true;
     storeOnly = true;
   };
+
+  security.pam.services.greetd.gnupg = {
+    enable = true;
+    noAutostart = true;
+    storeOnly = true;
+  };
+
+  services.displayManager.autoLogin.enable = false; 
 
   services.fprintd.enable = true; 
 
