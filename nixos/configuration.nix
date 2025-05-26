@@ -112,7 +112,7 @@
     nil
     dive # look into docker image layers
     podman-tui # status of containers in the terminal
-    nixos.icu4c
+    icu
   ];
 
   virtualisation.vmware.host.enable = true;
