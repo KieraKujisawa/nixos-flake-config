@@ -120,14 +120,28 @@
     git-cola
     rclone
     nil
-    podman
-    podman-compose
+    dive # look into docker image layers
+    podman-tui # status of containers in the terminal
   ];
 
   virtualisation.vmware.host.enable = true;
 
-  virtualisation.docker = {
-    enable = true;
+  # Enable common container config files in /etc/containers
+  virtualisation.containers.enable = true;
+  virtualisation = {
+    podman = {
+      enable = true;
+
+      # Create a `docker` alias for podman, to use it as a drop-in replacement
+      dockerCompat = false;
+
+      # Required for containers under podman-compose to be able to talk to each other.
+      defaultNetwork.settings.dns_enabled = true;
+    };
+
+    docker = {
+      enable = true;
+    }
   };
 
   programs.virt-manager.enable = true;
