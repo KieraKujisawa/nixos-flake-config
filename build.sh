@@ -1,1 +1,2 @@
-sudo nixos-rebuild switch --flake $(pwd)
+sudo nixos-rebuild switch --flake .
+home-manager switch --flake .#kieram@nixos
