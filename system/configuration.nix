@@ -85,7 +85,7 @@
   users.users.kieram = {
     isNormalUser = true;
     description = "Kiera Meredith";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "docker" "libvirtd" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.kleopatra
@@ -94,6 +94,7 @@
       thunderbird
       geany
       vscode
+      putty
     ];
   };
 
@@ -108,17 +109,25 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    fastfetch
     inxi
     htop
     gitFull
     git-cola
     rclone
-    putty
     nil
-    dotnetCorePackages.sdk_8_0-bin
-    dotnetCorePackages.sdk_9_0-bin
+    podman
+    podman-compose
   ];
+
+  virtualisation.vmware.host.enable = true;
+
+  virtualisation.docker = {
+    enable = true;
+  };
+
+  programs.virt-manager.enable = true;
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
