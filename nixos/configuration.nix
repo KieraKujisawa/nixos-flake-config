@@ -147,6 +147,8 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  programs.ssh.startAgent = true;
+
   security.pam.services.login.gnupg = {
     enable = true;
     noAutostart = true;
