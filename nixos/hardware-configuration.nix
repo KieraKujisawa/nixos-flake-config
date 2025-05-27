@@ -13,7 +13,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ "transparent_hugepage=never" ];
+  boot.kernelParams = [ "transparent_hugepage=never" "ibt=off" ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/0ae66958-6759-430d-897b-937e2cc4bd14";
