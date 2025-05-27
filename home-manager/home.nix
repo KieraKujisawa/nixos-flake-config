@@ -147,6 +147,9 @@
     };
   };
 
+  # Enable gnome-keyring
+  services.gnome-keyring.enable = true;
+
   services.gpg-agent = {
   enable = true;
   extraConfig = # ini

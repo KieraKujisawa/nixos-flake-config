@@ -43,6 +43,7 @@
     htop
     rclone
     nil
+    gnome-keyring
   ];
 
   # Set your time zone.
