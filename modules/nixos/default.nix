@@ -11,6 +11,7 @@
     ./development.nix
     ./firewall.nix
     ./flatpak.nix
+    ./greeter.nix
     ./hyprland.nix
     ./kde.nix
     ./networking.nix
