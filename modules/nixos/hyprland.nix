@@ -25,6 +25,7 @@ in
     wl-clipboard
     wofi
     waybar
+    libsForQt5.qt5.qtgraphicaleffects
     quickshell
   ];
 }
