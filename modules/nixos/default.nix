@@ -6,6 +6,7 @@
   # my-module = import ./my-module.nix;
 
   imports = [
+    ./boot.nix
     ./development.nix
     ./hyprland.nix
     ./virtualization.nix
