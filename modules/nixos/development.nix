@@ -1,8 +1,8 @@
-   { pkgs ? import <nixpkgs> { } } :
+{ config, pkgs, ... }:
 
-   pkgs.stdenv.mkShell {
-     buildInputs = with pkgs; [
-       gcc
+{
+    environment.systemPackages = with pkgs; [
+      gcc
        make
        ncurses
        binutils
@@ -12,5 +12,5 @@
        nodejs
        git
        coreutils
-     ];
-   }
+    ];
+}
