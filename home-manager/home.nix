@@ -114,6 +114,10 @@
     enable = true;
     userName = "Kiera Meredith";
     userEmail = "kiera@meredithkm.info";
+    package = pkgs.gitFull;
+    extraConfig = {
+      gui.tabsize = 4;
+    };
   };
 
   # starship - an customizable prompt for any shell
