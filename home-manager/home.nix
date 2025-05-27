@@ -1,6 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
+
   # TODO please change the username & home directory to your own
   home.username = "kieram";
   home.homeDirectory = "/home/kieram";
@@ -107,8 +108,6 @@
     putty
     keepassxc
     jetbrains-toolbox
-
-    quickshell.packages.<system>.default
   ];
 
   # basic configuration of git, please change to your own

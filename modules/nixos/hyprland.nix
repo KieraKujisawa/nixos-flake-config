@@ -1,5 +1,7 @@
 { inputs, config, pkgs, ... }:
-
+let
+  quickshell = inputs.quickshell.packages.${pkgs.system}.default;
+in
 {
   programs.hyprland = {
     enable = true;
@@ -23,5 +25,6 @@
     wl-clipboard
     wofi
     waybar
+    quickshell
   ];
 }
