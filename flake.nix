@@ -48,6 +48,14 @@
 
     zig-sweeper.url = "github:frost-phoenix/zig-sweeper";
 
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+
+      # THIS IS IMPORTANT
+      # Mismatched system dependencies will lead to crashes and other issues.
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = {

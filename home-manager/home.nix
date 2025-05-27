@@ -107,6 +107,8 @@
     putty
     keepassxc
     jetbrains-toolbox
+
+    quickshell.packages.<system>.default
   ];
 
   # basic configuration of git, please change to your own
