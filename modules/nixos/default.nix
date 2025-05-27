@@ -6,6 +6,7 @@
   # my-module = import ./my-module.nix;
 
   imports = [
+    ./audio.nix
     ./boot.nix
     ./development.nix
     ./firewall.nix

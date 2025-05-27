@@ -22,4 +22,6 @@
     storeOnly = true;
   };
 
+  services.fprintd.enable = true; 
+
 }
