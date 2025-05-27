@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 {
   imports = [
-    ./hardware-configuration.nix
+    ./../../nixos/hardware-configuration.nix
     ./../../modules/nixos
   ];
 
