@@ -89,7 +89,7 @@
   users.users.kieram = {
     isNormalUser = true;
     description = "Kiera Meredith";
-    extraGroups = [ "networkmanager" "docker" "libvirtd" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 
   # Install firefox.
@@ -110,31 +110,8 @@
     git-cola
     rclone
     nil
-    dive # look into docker image layers
-    podman-tui # status of containers in the terminal
     # icu
   ];
-
-  virtualisation.vmware.host.enable = true;
-
-  # Enable common container config files in /etc/containers
-  virtualisation.containers.enable = true;
-  virtualisation = {
-    podman = {
-      enable = true;
-      dockerCompat = false;
-      # Required for containers under podman-compose to be able to talk to each other.
-      defaultNetwork.settings.dns_enabled = true;
-    };
-
-    docker = {
-      enable = true;
-    };
-  };
-
-  programs.virt-manager.enable = true;
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

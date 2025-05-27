@@ -8,5 +8,6 @@
   imports = [
     ./development.nix
     ./hyprland.nix
+    ./virtualization.nix
   ];  
 }
