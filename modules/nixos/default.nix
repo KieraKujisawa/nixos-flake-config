@@ -8,11 +8,13 @@
   imports = [
     ./boot.nix
     ./development.nix
+    ./firewall.nix
     ./flatpak.nix
     ./hyprland.nix
     ./kde.nix
     ./networking.nix
     ./security.nix
+    ./services.nix
     ./system.nix
     ./user.nix
     ./virtualization.nix
