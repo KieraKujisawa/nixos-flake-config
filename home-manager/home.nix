@@ -108,10 +108,6 @@
     putty
     keepassxc
     jetbrains-toolbox
-
-    libreoffice-qt
-    hunspell
-    hunspellDicts.en_US
   ];
 
   # basic configuration of git, please change to your own

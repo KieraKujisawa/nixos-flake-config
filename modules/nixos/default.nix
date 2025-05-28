@@ -15,6 +15,7 @@
     ./hyprland.nix
     ./kde.nix
     ./networking.nix
+    ./office.nix
     ./security.nix
     ./services.nix
     ./system.nix
