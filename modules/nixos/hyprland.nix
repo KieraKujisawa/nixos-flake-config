@@ -27,5 +27,8 @@ in
     waybar
     libsForQt5.qt5.qtgraphicaleffects
     quickshell
+    qt6.qt5compat
+    qt6.full
+    qtcreator
   ];
 }
